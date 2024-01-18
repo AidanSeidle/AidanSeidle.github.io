@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color:rgb(196, 181, 181);
+    text-decoration: none;
+}
+
+a:visited {
+    color:rgb(196, 181, 181);
+    text-decoration: none;
+}
+
+.body {
+    margin: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    background-color: #d3bda8;
+    height: 100%;
+}
+
+.header {
+    padding-top: 1px;
+    padding-bottom: 0px;
+
+    font-family: monaco;
+    color: rgb(196, 181, 181);
+    text-align: center;
+
+    background-color: #1c2e0d;
+    background-image: url("media/forestbackground.avif");
+    background-position: 50% 77%;
+}
+
+.content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.LinkTable {
+    background-color: #354721;
+    color: rgb(196, 181, 181);
+    padding-bottom: 0;
+    z-index: 1;
+}
+
+
+table.LinkTable td:hover a {
+    color: #3e4444;
+}
+
+table.LinkTable td:hover {
+      background-color: rgb(196, 181, 181);
+}			
+
+.pageText {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: whitesmoke;
+}
+
+.footer {
+    background-color: #334e37;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
