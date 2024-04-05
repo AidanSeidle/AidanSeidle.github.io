@@ -5,29 +5,45 @@
 		<meta charset="UTF-8">
 		<title>Aidan Seidle</title>
 		<link rel="stylesheet" href="styles.css">
+		<script src="index.js" defer></script>
 	</head>
 
 	<body class="body">
 		<header class="header">
-            <a href="index.html"><h1>Aidan Seidle</h1></a>
-			<table class="LinkTable">
-				<tr>
-					<td>
-						<a href="about.html">About</a>
-					</td>
-					<td>
-						<a href="music.html">Music Stuff</a>
-					</td>
-				</tr>
-			</table>
+            <span><h1>Aidan Seidle</h1></span>
+			<span>
+				<nav>
+					<a class="active" href="index.html">Home</a>
+					<a href="code.html">Code</a>
+					<a href="music.html">Music Stuff</a>
+				</nav>
+			</span>
 		</header>
 
 		<main>
-			<div class="content">
-				<div class="pageText">
-					<p>Welcome to a little slice of the internet where I get way too excited about computational auditory neuroscience.</p>
-				</div>
-			</div>
+			<section>
+				<h2>Academic Interests</h2>
+				<img src="/media/Convolusional Kittens.png" alt="Convolutional Kittens!" class="left_img">
+				<p class="right_para">
+					I am currently an undergraduate student at UCLA studying Cognitive Science with a specialization in computing and Music Industry minor.
+					My specific research interests lie in studying computational models of human audition. 
+					Much of the visual system has been broken down and functionally replicated in computational systems while the auditory system has not received the same amount of attention. 
+					I hope help rectify this disparity by developing these computational models of auditory processing. 
+					I believe that a computational understanding of how humans perceive sound will shed light on the fundamental sonic features required to give rise to complex, rich, experiences like music perception.
+				</p>
+			</section>
+			<section>
+				<h2>Free Time</h2>
+				<img src="/media/SnowPic.jpg" alt="Me Skiin n Stuff" class="right_img">
+				<p class="left_para">
+					In my free time I like to snowboard and listen to music. I try to make music from time to time but ultimately think I should stick to the science of it.
+					When I'm back home in Colorado I like to do a little trail running if the altitude doesn't kill me and hangout with my two cats and dog.	
+				</p>
+			</section>			
 		</main>
+
+		<footer>
+			<p>Welcome to a little slice of the internet where I get way too excited about computational auditory neuroscience.</p>
+		</footer>
 	</body>
 </html>
