@@ -1,3 +1,16 @@
+#!/usr/bin/env php
+<?php
+    session_save_path(__DIR__.'/sessions/');
+    session_name('myWebpage');
+    session_start();
+    
+	$caffinated = isset($_COOKIE['dose'])
+
+    // if ($caffinated !== True){
+	// 	# KICK OFF INITIAL CALC
+    // }
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -13,7 +26,7 @@
             <span><h1>Aidan Seidle</h1></span>
 			<span>
 				<nav>
-					<a class="active" href="index.html">Home</a>
+					<a class="active" href="index.php">Home</a>
 					<a href="code.html">Code</a>
 					<a href="music.html">Music Stuff</a>
 				</nav>
@@ -21,6 +34,13 @@
 		</header>
 
 		<main>
+			<section>
+				<span id="caffination">
+					<?php
+						echo $caffinated ? "I'm currently caffinated with {$_COOKIE["dose"]}mg of caffeine!" : "I'm not currently caffinated.";
+					?>
+				</span>
+			</section>
 			<section>
 				<h2>Academic Interests</h2>
 				<img src="/media/Convolusional Kittens.png" alt="Convolutional Kittens!" class="left_img">
