@@ -1,6 +1,6 @@
 async function loadSheetData() {
 try {
-    const response = await fetch('sheet_value.json');
+    const response = await fetch('_data/sheet_value.json');
     const data = await response.json();
     
     // Assuming the value is stored in "sheetValue" in the JSON
