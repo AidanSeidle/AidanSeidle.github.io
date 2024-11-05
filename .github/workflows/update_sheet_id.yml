@@ -18,7 +18,7 @@ jobs:
           SHEET_ID: ${{ secrets.CAFFEINE_SHEET_ID }}
           API_KEY: ${{ secrets.SHEET_API_KEY }}
         run: |
-          echo "const sheetID = '${CAFFEINE_SHEET_ID}'; const apiKey = '${SHEET_API_KEY}';" > secrets.js
+          echo "const sheetID = '${SHEET_ID}'; const apiKey = '${API_KEY}';" > secrets.js
 
       - name: Commit and Push Changes
         run: |
