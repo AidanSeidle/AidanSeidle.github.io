@@ -140,3 +140,8 @@ section {
     position: relative;
     right: 0px;    
 }
+
+#sheetData {
+    line-height: 180%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
