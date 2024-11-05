@@ -13,9 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         
-      - name: Create _data directory
+      - name: Create data directory
         run: |
-          mkdir -p _data  # Create the _data directory if it doesn’t exist
+          mkdir -p data  # Create the data directory if it doesn’t exist
 
       - name: Fetch value from Google Sheets
         env:
@@ -36,6 +36,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add _data/sheet_value.json
+          git add data/sheet_value.json
           git commit -m "Update sheet value"
           git push
