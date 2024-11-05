@@ -15,8 +15,8 @@ jobs:
 
       - name: Fetch value from Google Sheets
         env:
-          SHEET_ID: ${{ secrets.SHEET_ID }}
-          API_KEY: ${{ secrets.API_KEY }}
+          SHEET_ID: ${{ secrets.CAFFEINE_SHEET_ID }}
+          API_KEY: ${{ secrets.SHEET_API_KEY }}
         run: |
           # Specify the range you want to fetch
           RANGE="Sheet1!A1"  # Adjust to your desired cell range
