@@ -1,0 +1,37 @@
+name: Fetch Google Sheets Value
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  fetch-sheet-value:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch value from Google Sheets
+        env:
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          # Specify the range you want to fetch
+          RANGE="Sheet1!A1"  # Adjust to your desired cell range
+          RESPONSE=$(curl -s "https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}")
+
+          # Extract the cell value from the JSON response
+          VALUE=$(echo $RESPONSE | jq -r '.values[0][0]')
+
+          # Write the value to a JSON file or HTML snippet
+          echo "{\"sheetValue\": \"$VALUE\"}" > _data/sheet_value.json
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add _data/sheet_value.json
+          git commit -m "Update sheet value"
+          git push
