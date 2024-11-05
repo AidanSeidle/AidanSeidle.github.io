@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        
+      - name: Create _data directory
+        run: |
+          mkdir -p _data  # Create the _data directory if it doesn’t exist
 
       - name: Fetch value from Google Sheets
         env:
