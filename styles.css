@@ -11,9 +11,9 @@ body {
 
 header {
     background-color: darkgreen;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    position: sticky;
+    top: 0;
+    left: 0;
     height: fit-content;
     width: 100%;
     font-size: x-large;
@@ -23,21 +23,20 @@ header {
 main {
     background-color: white;
     position: relative;
-    top: 118px;
-    left: 0px;
     z-index: 0;
-    padding: 5px;
-    margin-left: 4%;
-    margin-right: 4%;
+    padding: 1%;
+    padding-top: 0.05%;
+    margin: 0;
+    height: fit-content;
 }
 
 footer {
     position: relative;
-    float: bottom;
-    bottom: -140px;
-    left: 0px;
     background-color: grey;
     text-align: center;
+    height: fit-content;
+    padding: 0.05%;
+    margin: 1;
 }
 
 footer p {
@@ -92,7 +91,6 @@ p {
 .right_para {
     float: right;
     max-width: 70%;
-    margin-top:-18px;
 }
 
 .left_para {
@@ -102,6 +100,8 @@ p {
 
 h1 {
     padding-left: 20px;
+    margin: 0;
+    padding: 2.5%;
 }
 
 section {
@@ -147,8 +147,9 @@ section {
     padding-left: 1%;
     position: absolute;
     float: bottom;
+    left: 0;
     bottom: -10px;
-    width: 100%;
+    width: 99%;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: small;
 }
