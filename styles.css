@@ -14,6 +14,7 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
+    height: fit-content;
     width: 100%;
     font-size: x-large;
     z-index: 1;
@@ -22,7 +23,7 @@ header {
 main {
     background-color: white;
     position: relative;
-    top: 119px;
+    top: 118px;
     left: 0px;
     z-index: 0;
     padding: 5px;
@@ -33,7 +34,7 @@ main {
 footer {
     position: relative;
     float: bottom;
-    bottom: -80px;
+    bottom: -140px;
     left: 0px;
     background-color: grey;
     text-align: center;
@@ -91,6 +92,7 @@ p {
 .right_para {
     float: right;
     max-width: 70%;
+    margin-top:-18px;
 }
 
 .left_para {
@@ -142,5 +144,11 @@ section {
 }
 
 #sheetData {
+    padding-left: 1%;
+    position: absolute;
+    float: bottom;
+    bottom: -10px;
+    width: 100%;
     font-family: "Lucida Console", "Courier New", monospace;
+    font-size: small;
 }
