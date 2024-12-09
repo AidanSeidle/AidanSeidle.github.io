@@ -28,6 +28,7 @@ main {
     padding-top: 0.05%;
     margin: 0;
     height: fit-content;
+    overflow-x: hidden;
 }
 
 footer {
@@ -105,8 +106,7 @@ h1 {
 }
 
 section {
-    overflow: hidden;
-    height: auto;
+    height: fit-content;
 }
 
 .musicreviewlist {
@@ -159,4 +159,67 @@ section {
     text-decoration: none;
     color:black;
     line-height: 160%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+#slideshow-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    max-width: 100%;
+    height: 45vh;
+    margin: 0 0;
+    position: relative;
+    gap: 10px; /* Optional: Add spacing between slides */
+}
+
+.slide {
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    width: 20%;
+    margin: 0 -6%; /* Negative margin to create overlapping effect */
+    transition: transform 0.3s, z-index 0.3s, margin 0.3s;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.slide:hover {
+    transform: scale(1.2); /* Enlarges the hovered slide */
+    z-index: 10; /* Brings the hovered slide to the front */
+    margin: 0 8%; /* Creates space between the hovered slide and others */
+}
+
+/* Adjust the behavior of non-hovered slides */
+.slide:not(:hover) {
+    z-index: 0; /* Lower z-index for non-hovered slides */
+}
+
+.slide:first-child:hover {
+    transform: scale(1.2); /* Enlarges the hovered slide */
+    z-index: 10; /* Brings the hovered slide to the front */
+    margin: 0 10% 0 5%; /* Creates space between the hovered slide and others */
+}
+
+.slide:first-child {
+    margin-left: 0%; /* Ensure the first slide aligns properly */
+}
+
+#slideshow-text {
+    text-align: center;
+}
+
+.musicPage {
+    scroll-behavior: smooth;
 }
