@@ -51,11 +51,11 @@ jobs:
             git push
           fi
       
-      - name: Trigger GitHub Pages rebuild
-        if: success()  # Only run if there was a commit and push
-        env:
-          USER_TOKEN: ${{ secrets.USER_TOKEN }}
-        run: |
-          curl --fail --request POST \
-            --url https://api.github.com/repos/${{ github.repository }}/pages/builds \
-            --header "Authorization: Bearer $USER_TOKEN"
+      #- name: Trigger GitHub Pages rebuild
+        #if#: success()  # Only run if there was a commit and push
+        #env:
+          #USER_TOKEN: $#{{ secrets.USER_TOKEN }}
+        #run: |
+          #curl --fail --request POST \
+            #--url https://api.github.com/repos/$#{{ github.repository }}/pages/builds \
+            #--header "Authorization: Bearer $USER_TOKEN"
