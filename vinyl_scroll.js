@@ -24,4 +24,4 @@ slideshow_container.addEventListener(
         album_title_text.innerHTML = "&nbsp";
     },
     false,
-  );
+);
