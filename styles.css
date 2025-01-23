@@ -338,6 +338,7 @@ width: auto; /* Maintain aspect ratio */
 
 .c_page_spotify {
     z-index: 3;
+    border-radius: 25px;
 }
 
 .c_page_spotify_shadow {
