@@ -342,14 +342,19 @@ width: auto; /* Maintain aspect ratio */
 }
 
 .c_pokemon_holder {
-    background-image: url('/media/fire_scrolling.gif'); /* Path to your GIF file */
-    background-size: cover; /* Ensures the GIF spans the entire width and height */
-    background-repeat: no-repeat; /* Prevents the GIF from repeating */
-    background-position: center; /* Centers the GIF */
+    background-clip: border-box, border-box, content-box;
+    background-image:
+    url('/media/pixel_fire_border.gif'),
+    url('/media/pixel_fire_border.gif'),
+    url('/media/fire_scrolling.gif');
+    ; /* Path to your GIF file */
+    background-size: auto 10%, auto 10%, cover; /* Ensures the GIF spans the entire width and height */
+    background-repeat: repeat-x, repeat-x, no-repeat; /* Prevents the GIF from repeating */
+    background-position: 25px 100%, 0 100%, 0 -10px; /* Centers the GIF */
     width: 100%; /* Ensures it spans the full width of the page */
     height: 20%; /* Adjust height as needed */
     margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
+    padding-bottom: 5px; /* Remove any default padding */
     display: flex; /* Enables flexbox */
     flex-direction: column; /* Stacks items vertically */
     left:-200px;
@@ -362,6 +367,7 @@ width: auto; /* Maintain aspect ratio */
     text-shadow: 2px 2px 5px red;
     font-size: 40px;
 
+    margin: .75em 0 .25em 0;
     text-align: center; /* Ensures the text is centered */
     color: black; /* Optional: adjust text color for visibility */
     z-index: 2;
@@ -371,6 +377,7 @@ width: auto; /* Maintain aspect ratio */
     display: flex; /* Enables flexbox for the image container */
     justify-content: center; /* Horizontally centers the images */
     gap: 20px; /* Adds space between the images */
+    padding-bottom: 15px;
 }
 
 .c_pokemon_img {
@@ -397,7 +404,22 @@ width: auto; /* Maintain aspect ratio */
     z-index:1;
 }
 
-.c_main{
+.c_main {
     background-color: pink;
     padding:0;
+}
+
+.c_fire_border {
+    position:relative;
+    background: 
+    url('/media/pixel_fire_border.gif') 100% repeat-x,
+    url('/media/pixel_fire_border.gif') 100% repeat-x;
+    background-size: 5%, 5%;
+    background-position: right 100px bottom -205px, 
+                         right 0 bottom 0px;
+    z-index:0;
+}
+
+.c_fire_border_filler {
+    height:1px;
 }
