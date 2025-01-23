@@ -20,6 +20,10 @@ header {
     z-index: 1;
 }
 
+.c_header {
+    background-color: purple;
+}
+
 main {
     background-color: white;
     position: relative;
@@ -40,6 +44,10 @@ footer {
     margin: 1;
 }
 
+.c_footer {
+    background-color: plum;
+}
+
 footer p {
     background-color: initial;
 }
@@ -52,6 +60,10 @@ nav {
     width: 50%;
 }
 
+.c_nav {
+    background-color: plum;
+}
+
 nav a {
     float: left;
     text-decoration: none;
@@ -62,6 +74,11 @@ nav a {
 
 nav a:hover {
     background-color: beige;
+    color: black;
+}
+
+.c_nav a:hover {
+    background-color: pink;
     color: black;
 }
 
