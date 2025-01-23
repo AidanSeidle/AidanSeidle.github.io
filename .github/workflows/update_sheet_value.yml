@@ -20,7 +20,7 @@ jobs:
           mkdir -p data  # Ensure data directory exists
 
           # Specify the range you want to fetch
-          RANGE="'Auto Log'1!A1"
+          RANGE="Log!A1"
           RESPONSE=$(curl -s "https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}")
           
           # Extract the cell value from the JSON response

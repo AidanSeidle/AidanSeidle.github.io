@@ -372,3 +372,19 @@ width: auto; /* Maintain aspect ratio */
     /*margin: 0 8%; /* Creates space between the hovered slide and others */
     /*box-shadow: -0.5vw 0.5vh 1vw 0.5vh rgb(69, 69, 69), 0.5vw 0.5vh 1vw 0.5vh rgb(69, 69, 69);
 */}
+
+#site {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.yerba {
+    top:0px;
+    left:0px;
+    position:absolute;
+    z-index: 200;
+    height:80px;
+}
