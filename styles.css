@@ -279,56 +279,62 @@ width: auto; /* Maintain aspect ratio */
     }
 }
 
-/* Container to hold everything */
+.c_lola_container {
+    position: absolute;
+    display: inline-flex;
 
+    width: 300px;
+    height:auto;
+    padding: 0px;
+    margin: 2% 2% 5%;
+
+    left:20px;
+    top:50%;
+
+}
 
 /* Background image */
 .c_background-image {
-    position: absolute; /* Allows layering */
-    top: 0%;
-    left: 0%;
-    width: 22%;
-    height: auto; /* Maintains aspect ratio */
+    position: relative; /* Allows layering */
+    width: auto;
+    height: 400px; /* Maintains aspect ratio */
     z-index: 0; /* Places it behind other elements */
-    transform: translate(37%, 156%); /* Centers the image */
+    transform: translate(25%, 10%);
+
 }
 
 /* Text overlay */
 .c_lola_overlay-text {
-    position: absolute; /* Allows layering */
+    position: relative; /* Allows layering */
     z-index: 2; /* Places it above the background image */
     color: white; /* Text color */
     text-align: Center; /* Center text */
     padding: 1rem; /* Optional padding */
-    width: 30%; /* Restrict text width */
     background: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background for readability */
+    width: 50%;
+    height: fit-content;
     border-radius: 8px; /* Rounded corners for the text box */
-    transform: translate(7%,210%); /* Centers the image */
+    transform: translate(-90%, 120%);
 }
 
 /* Foreground image */
 .c_foreground-image {
-    position: absolute; /* Allows layering */
-    top: 0%;
-    left: 0%;
-    width: 35%;
-    height: auto; /* Maintains aspect ratio */
-    transform: translate(2%,87%); /* Centers the image */
+    position: relative; /* Allows layering */
+    width: auto;
+    height: 440px; /* Maintains aspect ratio */
     z-index: 3; /* Places it above the text */
+    transform: translate(-89%, -40%);
 }
 
 .c_page_spotify {
-    position: relative;
-    display: inline-flex;
-    width: 100%;
     z-index: 3;
 }
 
 .c_page_spotify_shadow {
-    display: inline-flex;
+    display:flex;
     position: relative;
-    float: right;
-    width: 50%;
+    float:right;
+    width:50%;
     padding: 0px;
     margin: 2% 2% 5%;
     border-radius: 25px;
