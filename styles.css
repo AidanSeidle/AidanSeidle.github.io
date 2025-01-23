@@ -28,7 +28,7 @@ main {
     padding-top: 0.05%;
     margin: 0;
     height: fit-content;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 footer {
@@ -280,26 +280,17 @@ width: auto; /* Maintain aspect ratio */
 }
 
 /* Container to hold everything */
-.c_lola_container {
-    position: relative; /* Enables layering with absolute positioning */
-    width: 30%; /* Scales width to viewport width */
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    overflow: hidden; /* Prevents content from spilling out */
-    transform: translate(10%, -17%); /* Centers the image */
-}
+
 
 /* Background image */
 .c_background-image {
     position: absolute; /* Allows layering */
     top: 0%;
     left: 0%;
-    width: 61%;
+    width: 22%;
     height: auto; /* Maintains aspect ratio */
-    z-index: 1; /* Places it behind other elements */
-    transform: translate(35%, 63%); /* Centers the image */
+    z-index: 0; /* Places it behind other elements */
+    transform: translate(37%, 156%); /* Centers the image */
 }
 
 /* Text overlay */
@@ -309,22 +300,40 @@ width: auto; /* Maintain aspect ratio */
     color: white; /* Text color */
     text-align: Center; /* Center text */
     padding: 1rem; /* Optional padding */
-    width: 80%; /* Restrict text width */
+    width: 30%; /* Restrict text width */
     background: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background for readability */
     border-radius: 8px; /* Rounded corners for the text box */
-    transform: translate(0%,-60%); /* Centers the image */
+    transform: translate(7%,210%); /* Centers the image */
 }
 
 /* Foreground image */
 .c_foreground-image {
     position: absolute; /* Allows layering */
-    z-index: 3; /* Places it above the text */
     top: 0%;
     left: 0%;
-    width: 100%;
+    width: 35%;
     height: auto; /* Maintains aspect ratio */
+    transform: translate(2%,87%); /* Centers the image */
+    z-index: 3; /* Places it above the text */
 }
 
+.c_page_spotify {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    z-index: 3;
+}
+
+.c_page_spotify_shadow {
+    display: inline-flex;
+    position: relative;
+    float: right;
+    width: 50%;
+    padding: 0px;
+    margin: 2% 2% 5%;
+    border-radius: 25px;
+    box-shadow: -20px 20px 20px 0px grey;
+}
 
 .c_pokemon_holder {
     background-image: url('/media/fire_scrolling.gif'); /* Path to your GIF file */
@@ -335,12 +344,12 @@ width: auto; /* Maintain aspect ratio */
     height: 20%; /* Adjust height as needed */
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
-    
     display: flex; /* Enables flexbox */
     flex-direction: column; /* Stacks items vertically */
-
+    left:-200px;
     justify-content: center; /* Horizontally centers the content */
     align-items: center; /* Vertically centers the content */
+    z-index: -2;
 }
 
 .c_pokemon_holder h2 {
@@ -349,6 +358,7 @@ width: auto; /* Maintain aspect ratio */
 
     text-align: center; /* Ensures the text is centered */
     color: black; /* Optional: adjust text color for visibility */
+    z-index: 2;
 }
 
 .c_pokemon_images {
@@ -373,18 +383,15 @@ width: auto; /* Maintain aspect ratio */
     /*box-shadow: -0.5vw 0.5vh 1vw 0.5vh rgb(69, 69, 69), 0.5vw 0.5vh 1vw 0.5vh rgb(69, 69, 69);
 */}
 
-#site {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-
 .yerba {
     top:0px;
     left:0px;
     position:absolute;
-    z-index: 200;
     height:80px;
+    z-index:1;
+}
+
+.c_main{
+    background-color: pink;
+    padding:0;
 }
