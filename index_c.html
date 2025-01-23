@@ -39,15 +39,27 @@
 				</div>
 
 				<div class="c_lola_container">
-					<img src="/media/LolaBodyNoBkg.png" alt="Background" class="c_background-image">
-					<div class="c_lola_overlay-text">
-						<h1>I really like cats.</h1>
-					</div>
-					<img src="/media/LolaHeadNoBkg.png" alt="Foreground" class="c_foreground-image">				
+					<img src="/media/LolaBodyNoBkg.png" alt="Background" class="c_lola_body">
+					<img src="/media/LolaHeadNoBkg.png" alt="Foreground" class="c_lola_head">				
 				</div>
 			</section>
 
 			<section>
+				<div class="c_lola_text">
+					<h1>There is no good reason for MATLAB to use 1-based indexing. </h1>
+					<p>
+						According to its own documentation, MATLAB's 1-based indexing "follows the same notation you're likely to see in mathematical textbooks," and, you know, I believe that - that could be true. 
+						It just, as a programming language, doesn't need to. I get that high level languages are designed to be more readable, but MATLAB, if it is for math, is going to have a primarily technical user base. 
+						I.e., the user base is likely fluent in multiple other programming languages and therefore, on average, already highly capable of translating math textbooks to code, making additional translational ease a marginal boon at best. 
+						When considering the likely knowledge of other, 0-indexed, programming languages this 1-indexing - I would hazard - is actually a detriment. Instead of being super intuitive, MATLAB takes a marked deviation from form but only in one small regard - easy to forget, painful to remember. 
+						Therefore, despite it matching their field, the self proclaimed primary users of MATLAB, mathemeticians, are forced to spend their time thinking about not accidentally 0-indexing, taking them out of the flow, which I would guess out weighs any gains from a more similar match to a textbook. 
+						Besides, you aren't really latexing in your equations straight from the book. You already have to break down formulas into programming logic so there is no streamlining to be gained, really, from an indexing difference. 
+						The process of doing math-textbook work in a programming language already requires translation but the translational direction heavily favors programming terms. 
+						Why force the programming language to speak in math terms in one instance while forcing all the math to speak in programming terms in every other case? It is splitting the difference in the worst possible way. 
+						Additionally, you aren't "stumbling" on to MATLAB; there isn't a sort of 1-indexed curb appeal factor to looking at a MATLAB script. A naive user isn't looking at your Bayesian model and thinking: "Oh thank god, I don't know statistics but at least it's 1-indexed. How readable!" 
+						If you're on MATLAB, 0-indexing is not going to be the most confusing part of your day, but enjoy spending your night and next day trying to debug an indexing mismatch all because MATLAB uses 1-indexing.
+					</p>
+				</div>
 				<div class="c_page_spotify_shadow">
 					<iframe class="c_page_spotify"
 						src="https://open.spotify.com/embed/playlist/1iV34s4fb0AiGACDvQLy2d?utm_source=generator" 

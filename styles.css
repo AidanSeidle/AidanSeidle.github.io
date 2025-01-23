@@ -284,47 +284,57 @@ width: auto; /* Maintain aspect ratio */
     display: inline-flex;
 
     width: 300px;
-    height:auto;
-    padding: 0px;
-    margin: 2% 2% 5%;
+    height: auto;
+    padding: 0;
+    margin: 0;
 
-    left:20px;
-    top:50%;
+    left:30px;
+    top:20%;
 
 }
 
 /* Background image */
-.c_background-image {
+.c_lola_body {
     position: relative; /* Allows layering */
     width: auto;
     height: 400px; /* Maintains aspect ratio */
     z-index: 0; /* Places it behind other elements */
-    transform: translate(25%, 10%);
+    transform: translate(25%, 30%);
 
-}
-
-/* Text overlay */
-.c_lola_overlay-text {
-    position: relative; /* Allows layering */
-    z-index: 2; /* Places it above the background image */
-    color: white; /* Text color */
-    text-align: Center; /* Center text */
-    padding: 1rem; /* Optional padding */
-    background: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background for readability */
-    width: 50%;
-    height: fit-content;
-    border-radius: 8px; /* Rounded corners for the text box */
-    transform: translate(-90%, 120%);
 }
 
 /* Foreground image */
-.c_foreground-image {
+.c_lola_head {
     position: relative; /* Allows layering */
     width: auto;
     height: 440px; /* Maintains aspect ratio */
     z-index: 3; /* Places it above the text */
-    transform: translate(-89%, -40%);
+    transform: translate(-69%, -20%);
 }
+
+/* Text overlay */
+.c_lola_text {
+    display: inline grid;
+    float: left;
+    position: relative; /* Allows layering */
+    z-index: 2; /* Places it above the background image */
+    color: white; /* Text color */
+    text-align: Center; /* Center text */
+    padding: 20px;
+    margin: 11% 1% 2% 2%;
+    border-radius: 25px;    
+    background: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background for readability */
+    width: 38%;
+    height: fit-content;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;
+}
+
+.c_lola_text p {
+    background-color: transparent;
+}
+
+
 
 .c_page_spotify {
     z-index: 3;
