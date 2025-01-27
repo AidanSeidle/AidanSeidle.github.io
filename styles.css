@@ -347,11 +347,46 @@ width: auto; /* Maintain aspect ratio */
     align-items: center;
 }
 
-.c_lola_text p {
+.c_main p {
     background-color: transparent;
 }
 
+.c_header h1 {
+    font-size: 80px;
+    color: white;
+    text-align: left;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+ 
+#minecraft {
+    text-shadow: -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple, 1px 1px 0 purple;
+}
 
+.c_main_content {
+    position: relative;
+    float: right;
+    width: 50%;
+    color: white;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    padding: 0px;
+    margin: 2%;
+}
+
+.c_main_content dl {
+    text-align: left;
+    border: purple dashed;
+    padding: 15px 30px;
+}
+
+.c_main_content dd {
+    opacity: 0.8;
+}
+
+.c_main_content h2 {
+    text-shadow: -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple, 1px 1px 0 purple;
+}
 
 .c_page_spotify {
     z-index: 3;
@@ -364,7 +399,7 @@ width: auto; /* Maintain aspect ratio */
     float:right;
     width:50%;
     padding: 0px;
-    margin: 2% 2% 5%;
+    margin: 2% 2% 2%;
     border-radius: 25px;
     box-shadow: -20px 20px 20px 0px grey;
 }
