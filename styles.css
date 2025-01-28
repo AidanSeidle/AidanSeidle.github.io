@@ -384,10 +384,6 @@ width: auto; /* Maintain aspect ratio */
     opacity: 0.8;
 }
 
-.c_main_content h2 {
-    text-shadow: -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple, 1px 1px 0 purple;
-}
-
 .c_page_spotify {
     z-index: 3;
     border-radius: 25px;
@@ -404,7 +400,7 @@ width: auto; /* Maintain aspect ratio */
     box-shadow: -20px 20px 20px 0px grey;
 }
 
-.c_pokemon_holder {
+#c_pokemon_holder {
     background-clip: border-box, border-box, content-box;
     background-image:
     url('/media/pixel_fire_border.gif'),
@@ -426,7 +422,7 @@ width: auto; /* Maintain aspect ratio */
     z-index: -2;
 }
 
-.c_pokemon_holder h2 {
+#c_pokemon_holder h2 {
     text-shadow: 2px 2px 5px red;
     font-size: 40px;
 
@@ -472,17 +468,53 @@ width: auto; /* Maintain aspect ratio */
     padding:0;
 }
 
-.c_fire_border {
-    position:relative;
-    background: 
-    url('/media/pixel_fire_border.gif') 100% repeat-x,
-    url('/media/pixel_fire_border.gif') 100% repeat-x;
-    background-size: 5%, 5%;
-    background-position: right 100px bottom -205px, 
-                         right 0 bottom 0px;
-    z-index:0;
+.c_main h2 {
+    color: white;
+    text-shadow: -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple, 1px 1px 0 purple;
 }
 
-.c_fire_border_filler {
-    height:1px;
+#link_bag_img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.4s;
+  }
+
+#link_bag_link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    visibility: hidden;
+    justify-content: center;
+}
+
+#link_bag_link.visible {
+    visibility: visible;
+}
+
+@keyframes shake {
+0% { transform: rotate(0deg); }
+25% { transform: rotate(-5deg); }
+50% { transform: rotate(5deg); }
+75% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+#RedBullTime {
+    position:relative;
+    height:fit-content;
+    width:100%;
+    left:3%;
+    background-image: url("/media/RedBull");
+    background-repeat: repeat-x;
+    background-clip: border-box;
+}
+#RedBullTime pre {
+    text-align: left;
+    margin: 0 10% 0 ;
+}
+
+#red_bull_graph {
+    width:80%;
 }
