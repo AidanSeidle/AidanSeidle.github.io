@@ -316,7 +316,7 @@ width: auto; /* Maintain aspect ratio */
     width: auto;
     height: 400px; /* Maintains aspect ratio */
     z-index: 0; /* Places it behind other elements */
-    transform: translate(25%, 30%);
+    transform: translate(25%, -10%);
 
 }
 
@@ -326,7 +326,7 @@ width: auto; /* Maintain aspect ratio */
     width: auto;
     height: 440px; /* Maintains aspect ratio */
     z-index: 3; /* Places it above the text */
-    transform: translate(-69%, -20%);
+    transform: translate(-69%, -60%);
 }
 
 /* Text overlay */
@@ -338,7 +338,7 @@ width: auto; /* Maintain aspect ratio */
     color: white; /* Text color */
     text-align: Center; /* Center text */
     padding: 20px;
-    margin: 11% 1% 2% 2%;
+    margin: 20% 1% 2% 2%;
     border-radius: 25px;    
     background: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background for readability */
     width: 38%;
