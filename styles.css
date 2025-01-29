@@ -515,6 +515,11 @@ width: auto; /* Maintain aspect ratio */
     margin: 0 10% 0 ;
 }
 
+#RedBullTime p {
+    width: 80%;
+    margin: 0 10%;
+}
+
 #red_bull_graph {
     width:80%;
 }
