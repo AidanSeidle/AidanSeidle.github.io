@@ -34,17 +34,57 @@ function updateLink() {
 
 // Handle bag click event
 bag.addEventListener('click', () => {
-    shakeBag();
+    if (isOpen) {
+        // Toggle signal bag close
+        isOpen = false;
 
-    setTimeout(() => {
-    // Rotate and switch bag state
-    bag.style.transform = `rotate(${isOpen ? '0' : '90deg'})`;
-    bag.src = isOpen ? '/media/BundleClosed.png' : '/media/BundleOpen.png';
+        
+        // Hide link
+        updateLink();
+        // Closed image
+        bag.src = '/media/BundleClosed.png';
+        // Rotate upright
+        bag.style.transform = 'rotate(0)';
+        setTimeout(() => {
+            shakeBag();
+
+            // Toggle bag state
+            isOpen = true;
+
+            // Rotate and switch bag state
+            setTimeout(() => {
+                bag.src = '/media/BundleOpen.png';
+
+                bag.style.transform = 'rotate(90deg)';
+
+                setTimeout(() => {
+                    // Update the link text and page
+                    updateLink();
+                }, 250);
+            }, 500);
+        }, 300);
+
+        
+
+    } else {
+        shakeBag();
+
+        // Toggle bag state
+        isOpen = true;
+
+        // Rotate and switch bag state
+        setTimeout(() => {
+            bag.src = '/media/BundleOpen.png';
+
+            bag.style.transform = 'rotate(90deg)';
+
+            setTimeout(() => {
+                // Update the link text and page
+                updateLink();
+            }, 250);
+        }, 500);
+       
     
-    // Toggle bag state
-    isOpen = !isOpen;
-    
-    // Update the link text and page
-    updateLink();
-    }, 300);
+    }
+
 });
