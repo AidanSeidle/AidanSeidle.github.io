@@ -325,7 +325,7 @@ width: auto; /* Maintain aspect ratio */
     position: relative; /* Allows layering */
     width: auto;
     height: 440px; /* Maintains aspect ratio */
-    z-index: 3; /* Places it above the text */
+    z-index: 4; /* Places it above the text */
     transform: translate(-69%, -60%);
 }
 

@@ -53,14 +53,17 @@ bag.addEventListener('click', () => {
 
             // Rotate and switch bag state
             setTimeout(() => {
-                bag.src = '/media/BundleOpen.png';
+                
+                bag.style.transform = 'rotate(180deg)';
 
-                bag.style.transform = 'rotate(90deg)';
+                setTimeout(() => {
+                    bag.src = '/media/BundleOpen.png';
+                }, 400);
 
                 setTimeout(() => {
                     // Update the link text and page
                     updateLink();
-                }, 250);
+                }, 425);
             }, 500);
         }, 300);
 
@@ -74,14 +77,17 @@ bag.addEventListener('click', () => {
 
         // Rotate and switch bag state
         setTimeout(() => {
-            bag.src = '/media/BundleOpen.png';
 
-            bag.style.transform = 'rotate(90deg)';
+            bag.style.transform = 'rotate(180deg)';
+
+            setTimeout(() => {
+            bag.src = '/media/BundleOpen.png';
+            }, 400);
 
             setTimeout(() => {
                 // Update the link text and page
                 updateLink();
-            }, 250);
+            }, 425);
         }, 500);
        
     
