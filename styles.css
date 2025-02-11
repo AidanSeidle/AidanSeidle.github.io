@@ -65,6 +65,13 @@
     background-color: purple;
   }
   
+  .c_header h1 {
+    font-size: 80px;
+    color: white;
+    text-align: left;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
   /* Complete Navigation Bar */
   .completeNavBar {
     position: relative;
@@ -124,6 +131,16 @@
     transform: translateY(2px);
   }
 
+  .c_completeNavBar {
+    position: relative;
+    bottom: 2px;
+    display: flex;
+    justify-content: space-between; /* Push child elements to opposite sides */
+    align-items: center;
+    width: 100%;
+    background-color: purple;
+  }
+
   .c_nav {
     background-color: plum;
   }
@@ -132,8 +149,6 @@
     background-color: pink;
     color: black;
   }
-
-  
     
   /* ==========================================================================
      4. Main Content & Layout
@@ -412,7 +427,7 @@
     padding: 0;
     margin: 0;
     left: 30px;
-    top: 20%;
+    top: 15%;
   }
   
   .c_lola_body {
