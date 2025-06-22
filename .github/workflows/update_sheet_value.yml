@@ -48,6 +48,7 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Update sheet value"
+            git pull --rebase origin main            
             git push
           fi
       
