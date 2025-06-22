@@ -2,7 +2,7 @@ name: Fetch Google Sheets Value
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Runs every hour
+    - cron: '*/15 * * * *' # Runs every hour
 
 jobs:
   fetch-sheet-value:
@@ -29,13 +29,13 @@ jobs:
           VALUE=$(echo "$RESPONSE" | jq -r '.values[0][0]')
           
           # Check if the value is different to avoid unnecessary commits
-          if [[ -f data/sheet_value.json && "$(jq -r '.sheetValue' data/sheet_value.json)" == "$VALUE" ]]; then
+          if [[ -f public/data/sheet_value.json && "$(jq -r '.sheetValue' public/data/sheet_value.json)" == "$VALUE" ]]; then
             echo "No changes in sheet value. Skipping commit."
             exit 0
           fi
 
           # Update JSON file if value has changed
-          echo "{\"sheetValue\": \"$VALUE\"}" > data/sheet_value.json
+          echo "{\"sheetValue\": \"$VALUE\"}" > public/data/sheet_value.json
 
       - name: Commit and push changes
         if: success()
@@ -45,7 +45,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          git add data/sheet_value.json
+          git add public/data/sheet_value.json
           
           if git diff --cached --quiet; then
             echo "No changes to commit."
