@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main  # Rebuild and deploy whenever main updates
+  workflow_run:
+    workflows: ["Fetch Google Sheets Value"]
+    types:
+      - completed
 
 jobs:
   deploy:
