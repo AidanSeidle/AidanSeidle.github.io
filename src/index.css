@@ -1,0 +1,119 @@
+/* ==========================================================================
+      GLOBAL STYLES
+   ========================================================================== */
+:root {
+  --custom-bg-color: hsl(246, 35%, 11%);
+}
+
+.custom-bg {
+  background-color: var(--custom-bg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pixel NES", Arial, sans-serif, monospace;
+  color: palegoldenrod; 
+}
+
+.micro-header {
+  font-family: "Pixel NES", Arial, sans-serif, monospace;
+  color: palegoldenrod; 
+}
+
+.micro-header:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 2px 10px palegoldenrod !important;
+}
+
+
+body {
+  font-family: Arial, sans-serif, monospace;
+  overflow-y: scroll;
+  color: palegoldenrod;
+  margin: 0;
+  background:
+    radial-gradient(circle, rgba(236, 91, 8, 0.788), rgba(52, 3, 66, 0.1)), 
+    linear-gradient(to top, rgba(102, 13, 110, 0.774), rgb(15, 77, 128));
+  background-blend-mode: overlay;
+}
+
+@font-face {font-family:"Pixel NES";
+            src:url("/assets/fonts/Pixel_NES.eot?") format("eot"),
+                url("/assets/fonts/Pixel_NES.woff") format("woff"),
+                url("/assets/fonts/Pixel_NES.ttf") format("truetype"),
+                url("/assets/fonts/Pixel_NES.svg#PixelNES") format("svg");
+            font-weight:normal;
+            font-style:normal;
+}
+
+
+/* ==========================================================================
+      HEADER AND NAV BAR
+   ========================================================================== */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.pixel-nav-link {
+  color: palegoldenrod;
+  font-family: "Pixel NES", monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.pixel-nav-link:hover,
+.caf-nav-link:hover {
+  color: white;
+  text-shadow: 0px 2px 10px palegoldenrod !important;
+  text-decoration: none;
+}
+
+.pixel-nav-link.active {
+  color: gold !important;
+  text-shadow: 0px 2px 10px palegoldenrod !important;
+  text-decoration: none;
+}
+
+.pixel-nav-link:focus {
+  color: gold !important;
+  text-shadow: 0px 2px 10px palegoldenrod !important;
+  text-decoration: none;
+}
+
+.caf-nav-link {
+  color: palegoldenrod;
+  font-family: "Pixel NES", monospace;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+/* ==========================================================================
+      CODE PAGE
+   ========================================================================== */
+.center_para {
+  padding: 2%;
+  text-align: center;
+}
+
+.icon {
+  height: auto; 
+  width: auto; 
+  max-width: 5%; 
+  max-height: 5%;
+}
