@@ -89,7 +89,7 @@ function Home() {
         </Col>
     </Row>
 
-    <Row style={{ border: '5px solid black', margin: '5% 0 0 0' }}>
+    {/*<Row style={{ border: '5px solid black', margin: '5% 0 0 0' }}>
         <Col style={{ border: '5px solid black', display: 'flex', justifyContent: 'center'}}>
             <a href="https://www.linkedin.com/in/aidan-seidle/" target="_blank">
                 <img src="../assets/media/icons/LinkedInIcon.png" alt="Aidan Seidle LinkedIn" style={{maxWidth: '120px', width: '100%', height: 'auto', opacity: 0.5}}/>
@@ -100,14 +100,14 @@ function Home() {
                 <img src="../assets/media/icons/InstagramIcon.png" alt="Aidan Seidle Instagram" style={{maxWidth: '120px', width: '100%', height: 'auto', opacity: 0.5}}/>
             </a>            
         </Col>
-        {/* <Col></Col>
+        <Col></Col>
         <Col style={{ background: 'black', border: '5px solid black', margin: '0' }}>
         <div>
             <p>CRAZY MODE LINK DOOR</p>
         </div>
         </Col>
-        <Col></Col> */}
-    </Row>
+        <Col></Col> 
+    </Row> */}
     </Row>
   );
 }
