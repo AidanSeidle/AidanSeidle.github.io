@@ -48,18 +48,6 @@ function Home() {
                     <Link to="/char-pixel" className="micro-header">Image Char-Pixelization</Link>
                     <p style={{fontSize: 'small'}}>Takes an image and creates a drawing of it using text characters.</p>
                     </li>
-                    <li>
-                    <a className='micro-header'>Project 2</a>
-                    <p>Info on project 2</p>
-                    </li>
-                    <li>
-                    <a className='micro-header'>Project 3</a>
-                    <p>Info on project 3</p>
-                    </li>
-                    <li>
-                    <a className='micro-header'>Project 4</a>
-                    <p>Info on project 4</p>
-                    </li>
                 </ul>
                 </div>
             </Row>
