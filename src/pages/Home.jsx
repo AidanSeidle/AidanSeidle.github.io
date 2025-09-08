@@ -3,112 +3,71 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <Row style={{
-    border: '5px solid black',
-    margin: '0',
-    padding: '0 5%'
-    }}>
-    <Row style={{
-        border: '5px solid black',
-        margin: '5% 0 0 0',
-    }}>
-        <h2>Academic Interests</h2>
-        <div>
-        <p>
-            Much of the visual system has been broken down and functionally replicated in computational systems while the auditory system has not received the same amount of attention.
-            I hope to help develop these computational models of auditory processing.
-            I believe that a computational understanding of how humans perceive sound will shed light on the fundamental sonic features required to give rise to complex, rich, experiences like music perception.
-        </p>
-        </div>
-        <br />
-        <h2>Free Time</h2>
-        <div>
-        <p>
-            I like to skate and snowboard. I make subpar music, but I did win a rap battle once.
-            <br /><br />
-            I also enjoy a whole bunch of video games including but not limited to Minecraft, CS:GO, and the riveting Gas Station Simulator.
-            <br /><br />
-        </p>
-        </div>
-    </Row>
-
-    <Row style={{ 
-            padding : '0',
-            margin: '5% 0 0 0',
-            }}>
-        <Col style={{ 
-            border: '5px solid black',
-            margin: '0',
-            }}>
-            <Row>
+    <div>
+        <Col>
+            <Row style={{ 
+                    margin: '0 0 5% 0',
+                    }}>
                 <div>
-                <h3>Projects</h3>
-                <ul>
-                    <li>
-                    <Link to="/char-pixel" className="micro-header">Image Char-Pixelization</Link>
-                    <p style={{fontSize: 'small'}}>Takes an image and creates a drawing of it using text characters.</p>
-                    </li>
-                </ul>
+                    <h2 style={{fontSize:'1.4em'}}>About</h2>
+                    <p>
+                        I am currently working as a lab manager and research assistant in Dr. Malinda McPherson's Auditory Perception Lab at Purdue University researching auditory perception and individual differences. 
+                        Previously, I worked in Dr. Barbara Knowlton's Cognitive Neuroscience Lab at UCLA where I earned my B.S. in Cognitive Science with a Specialization in Computing and a minor in Music Industry.
+                    </p>
+                    <p>If interested, my less quick CV is <a href="../assets/media/CV.pdf">here</a>.</p>
+
+                    
                 </div>
             </Row>
-        </Col>
 
-        <Col style={{ 
-            border: '5px solid black', 
-            margin: 0
-            }}>
-        <h2>My Quick CV</h2>
-        <ul>
-            <li>
-            <b>Research Assistant ~ Purdue ~ Dr. McPherson</b>
-            <ul>
-                <li>Psychoacoustic</li>
-                <li>Perceptual Differences</li>
-                <li>Auditory Preferences</li>
-            </ul>
-            </li>
-            <li>
-            <b>Undergrad Research Assistant ~ UCLA ~ Dr. Knowlton</b>
-            <ul>
-                <li>Perceptual Learning and Memory</li>
-                <li>Modeling - DDM</li>
-                <li>fMRI</li>
-            </ul>
-            </li>
-            <br/>
-            <li>
-            <b>Cognitive Science B.S. ~ UCLA</b>
-            <ul>
-                <li>Specialization in Computing</li>
-                <li>Music Industry Minor</li>
-            </ul>
-            </li>
-        </ul>
-        <br />
-        <p>If interested, here is my less quick <a href="../assets/media/CV.pdf">CV</a>.</p>
-        </Col>
-    </Row>
+            <Row style={{ 
+                    margin: '0 0 5% 0',
+                    }}>
+                {/* <Col>
+                    <Row>
+                        <div>
+                        <h2 style={{fontSize:'1.4em'}}>Personal Projects</h2>
+                        <ul>
+                            <li>
+                            <Link to="/char-pixel" className="micro-header">Image Char-Pixelization</Link>
+                            <p style={{fontSize: 'small'}}>Takes an image and creates a drawing of it using text characters.</p>
+                            </li>
+                        </ul>
+                        </div>
+                    </Row>
+                </Col> */}
 
-    {/*<Row style={{ border: '5px solid black', margin: '5% 0 0 0' }}>
-        <Col style={{ border: '5px solid black', display: 'flex', justifyContent: 'center'}}>
-            <a href="https://www.linkedin.com/in/aidan-seidle/" target="_blank">
-                <img src="../assets/media/icons/LinkedInIcon.png" alt="Aidan Seidle LinkedIn" style={{maxWidth: '120px', width: '100%', height: 'auto', opacity: 0.5}}/>
-            </a>            
+                <Col>
+                    <h2 style={{fontSize:'1.4em'}}>Recent Events</h2>
+                    <table>
+                        <Row>
+                        <Col style={{maxWidth:'15%'}}>
+                            <thead>2025</thead>
+                        </Col>
+                        <Col>
+                            <tbody>
+                                <tr>
+                                    <a href='https://2025.ccneuro.org/poster/?id=vubKyNUb5R'>CCN</a> - Training on Ecologically Relevant Tasks Improves Alignment Between Artificial Neural Network and Human Similarity Judgements
+                                </tr>
+                                <br />
+                                <tr>
+                                    <a href='https://escholarship.org/uc/item/5jq714hc'>CogSci</a> - The Temporal Evolution of Implicit Bias in Perceptual Decision-Making
+                                </tr>
+                                <br />
+                                <tr>
+                                    <a href='https://pmg.joynadmin.org/documents/1050/67be84f67cd0475b3916b6f2.pdf#page=443'>ARO</a> - Cross-Culturally Shared Sensitivity to Harmonic Structure Underlies Aspects of Pitch Discrimination
+                                </tr>
+                            </tbody>
+                        </Col>
+                        </Row>
+                        
+                        
+                    </table>
+                    <br />
+                </Col>
+            </Row>
         </Col>
-        <Col style={{ border: '5px solid black', display: 'flex', justifyContent: 'center'}}>
-            <a href="https://www.instagram.com/aidanseidle/" target="_blank">
-                <img src="../assets/media/icons/InstagramIcon.png" alt="Aidan Seidle Instagram" style={{maxWidth: '120px', width: '100%', height: 'auto', opacity: 0.5}}/>
-            </a>            
-        </Col>
-        <Col></Col>
-        <Col style={{ background: 'black', border: '5px solid black', margin: '0' }}>
-        <div>
-            <p>CRAZY MODE LINK DOOR</p>
-        </div>
-        </Col>
-        <Col></Col> 
-    </Row> */}
-    </Row>
+    </div>
   );
 }
 

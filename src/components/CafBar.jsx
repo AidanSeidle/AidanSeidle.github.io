@@ -43,8 +43,7 @@ function CafBar() {
 
   return (
     <Container fluid style={{
-      padding: '0',
-      margin: '0'
+      fontSize: '1.4em'
       }}>
         <a
           id="cafLink"
