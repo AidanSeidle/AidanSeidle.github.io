@@ -7,34 +7,22 @@ function Home() {
         <Col>
             <Row>
                 <div>
-                    <h2 style={{fontSize:'1.4em'}}>About</h2>
+                    <h2>About</h2>
                     <p>
                         I am currently working as a lab manager and research assistant in Dr. Malinda McPherson's Auditory Perception Lab at Purdue University researching auditory perception and individual differences. 
                         Previously, I worked in Dr. Barbara Knowlton's Cognitive Neuroscience Lab at UCLA where I earned my B.S. in Cognitive Science with a Specialization in Computing and a minor in Music Industry.
                     </p>
                     <p>If interested, my less quick CV is <a href="../assets/media/CV.pdf">here</a>.</p>
 
+                    <h2 style={{fontSize:'1em'}}>This site is better on desktop! Please check it out for more information.</h2>
+
                     
                 </div>
             </Row>
 
             <Row>
-                {/* <Col>
-                    <Row>
-                        <div>
-                        <h2 style={{fontSize:'1.4em'}}>Personal Projects</h2>
-                        <ul>
-                            <li>
-                            <Link to="/char-pixel" className="micro-header">Image Char-Pixelization</Link>
-                            <p style={{fontSize: 'small'}}>Takes an image and creates a drawing of it using text characters.</p>
-                            </li>
-                        </ul>
-                        </div>
-                    </Row>
-                </Col> */}
-
                 <Col>
-                    <h2 style={{fontSize:'1.4em'}}>Recent Events</h2>
+                    <h2>Recent Events</h2>
                     <table>
                         <Row>
                         <Col style={{maxWidth:'15%'}}>

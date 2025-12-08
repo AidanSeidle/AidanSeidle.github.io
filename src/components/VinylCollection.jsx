@@ -46,7 +46,7 @@ function VinylCollection() {
 
     return (
         <>
-            <h2>My Vinyl Collection</h2>
+            <h2 style={{fontSize:'1.4em'}}>My Vinyl Collection</h2>
             <div
                 id="slideshow-container"
                 onMouseOver={handleMouseOver}

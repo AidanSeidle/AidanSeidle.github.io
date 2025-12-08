@@ -10,9 +10,14 @@
   background-color: var(--custom-bg-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: "Pixel NES", Arial, sans-serif, monospace;
   color: palegoldenrod; 
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Pixel NES", Arial, sans-serif, monospace;
+  color: #1B1B1B; 
 }
 
 .micro-header {
@@ -26,12 +31,11 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0px 2px 10px palegoldenrod !important;
 }
 
-
 body {
   font-family: Arial, sans-serif, monospace;
   overflow-y: scroll;
-  color: palegoldenrod;
-  margin: 0;
+  overflow-x: hidden;
+  color: #1B1B1B;
   background:
     radial-gradient(circle, rgba(236, 91, 8, 0.788), rgba(52, 3, 66, 0.1)), 
     linear-gradient(to top, rgba(102, 13, 110, 0.774), rgb(15, 77, 128));
@@ -90,7 +94,7 @@ header {
 .caf-nav-link {
   color: palegoldenrod;
   font-family: "Pixel NES", monospace;
-  font-size: 0.6em;
+  font-size: 0.5em;
   text-transform: uppercase;
   transition: color 0.3s ease;
   text-decoration: none;
@@ -115,6 +119,6 @@ footer {
 .icon {
   height: auto; 
   width: auto; 
-  max-width: 5%; 
-  max-height: 5%;
+  max-width: 10%; 
+  max-height: 10%;
 }
