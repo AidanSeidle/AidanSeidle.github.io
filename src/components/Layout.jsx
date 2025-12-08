@@ -32,7 +32,7 @@ function Layout({ children }) {
           </Col>
           {/* Col containing header image */}
           <Col sm={'auto'}>
-            <img src={'src/assets/media/NoBkgEEG.png'} 
+            <img src={'../assets/media/NoBkgEEG.png'} 
               style={{
                 width:'auto',
                 minWidth:'100px',
