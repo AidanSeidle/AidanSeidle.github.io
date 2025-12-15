@@ -12,6 +12,10 @@ import MobileLayout from "./components/MobileLayout";
 import Home from "./pages/Home";
 import Mobile from "./pages/Mobile";
 import Code from "./pages/Code";
+import CodingProject_CaffeineCoachella from "./pages/CodingProject_CaffeineCoachella";
+
+
+
 import Music from "./pages/Music";
 import CharPixelPage from "./pages/CharPixelPage";
 
@@ -34,7 +38,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout><Home /></Layout>} />
           <Route path="/code" element={<Layout><Code /></Layout>} />
+          <Route path="/CodingProject_CaffeineCoachlla" element={<Layout><CodingProject_CaffeineCoachella /></Layout>} />
+
+
+
+
           <Route path="/music" element={<Layout><Music /></Layout>} />
+
           <Route path="*" element={<h2>Page Not Found</h2>} />
 
 
