@@ -51,6 +51,14 @@ body {
             font-style:normal;
 }
 
+.btn-custom_card {
+  background-color: #1B1B1B;
+  color: palegoldenrod;
+}
+.btn-custom_card:hover {
+  background-color: palegoldenrod;
+  color: #1B1B1B;
+}
 
 /* ==========================================================================
       HEADER AND NAV BAR

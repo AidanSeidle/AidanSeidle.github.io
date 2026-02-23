@@ -1,5 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 function Home() {
   return (
@@ -36,28 +38,68 @@ function Home() {
                 <Col>
                     <h2 style={{fontSize:'1.4em'}}>Recent Events</h2>
                     <table>
-                        <Row>
-                        <Col style={{maxWidth:'15%'}}>
-                            <thead>2025</thead>
-                        </Col>
-                        <Col>
-                            <tbody>
-                                <tr>
-                                    <a href='https://2025.ccneuro.org/poster/?id=vubKyNUb5R'>CCN</a> - Training on Ecologically Relevant Tasks Improves Alignment Between Artificial Neural Network and Human Similarity Judgements
-                                </tr>
-                                <br />
-                                <tr>
-                                    <a href='https://escholarship.org/uc/item/5jq714hc'>CogSci</a> - The Temporal Evolution of Implicit Bias in Perceptual Decision-Making
-                                </tr>
-                                <br />
-                                <tr>
-                                    <a href='https://pmg.joynadmin.org/documents/1050/67be84f67cd0475b3916b6f2.pdf#page=443'>ARO</a> - Cross-Culturally Shared Sensitivity to Harmonic Structure Underlies Aspects of Pitch Discrimination
-                                </tr>
-                            </tbody>
-                        </Col>
+                        <Row>   
+                            <Col style={{maxWidth:'15%'}}>
+                                <h2 style={{fontSize:'1.4em'}}>2026</h2>
+                            </Col>
+                            <Col>
+                                <Card>
+                                    <Card.Header style={{backgroundColor:'#355E3B', color: 'palegoldenrod'}}  as="h5">ARO</Card.Header>
+                                    <Card.Body>
+                                        <Card.Title>Benchmarking Artificial Neural Network Models of Human Auditory Processing With Sound Similarity Judgements</Card.Title>
+                                        <Card.Text>
+                                            Presenting Author
+                                        </Card.Text>
+                                        <Button href='https://pmg.joynadmin.org/documents/1050/697a42ba13817023db68dce3.pdf#page=460' target="_blank" variant="custom_card">Abstract</Button>
+                                        <Card.Title>Robustness to Noise Reveals Cross-Culturally Consistent Properties of Pitch Perception for Harmonic and Inharmonic Sounds</Card.Title>
+                                        <Card.Text>
+                                            Contributing Author
+                                        </Card.Text>
+                                        <Button href='https://pmg.joynadmin.org/documents/1050/697a42ba13817023db68dce3.pdf#page=173' target="_blank" variant="custom_card">Abstract</Button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
                         </Row>
-                        
-                        
+                        <br />
+                        <Row>   
+                            <Col style={{maxWidth:'15%'}}>
+                                <h2 style={{fontSize:'1.4em'}}>2025</h2>
+                            </Col>
+                            <Col>
+                                <Card>
+                                    <Card.Header style={{backgroundColor:'#355E3B', color: 'palegoldenrod'}} as="h5">CCN</Card.Header>
+                                    <Card.Body>
+                                        <Card.Title>Training on Ecologically Relevant Tasks Improves Alignment Between Artificial Neural Network and Human Similarity Judgements</Card.Title>
+                                        <Card.Text>
+                                            Presenting Author
+                                        </Card.Text>
+                                        <Button href='https://2025.ccneuro.org/poster/?id=vubKyNUb5R' target="_blank" variant="custom_card">Abstract</Button>
+                                    </Card.Body>
+                                </Card>
+                                <br />
+                                <Card>
+                                    <Card.Header style={{backgroundColor:'#355E3B', color: 'palegoldenrod'}} as="h5">CogSci</Card.Header>
+                                    <Card.Body>
+                                        <Card.Title>The Temporal Evolution of Implicit Bias in Perceptual Decision-Making</Card.Title>
+                                        <Card.Text>
+                                            Contributing Author
+                                        </Card.Text>
+                                        <Button href='https://escholarship.org/uc/item/5jq714hc' target="_blank" variant="custom_card">Abstract</Button>
+                                    </Card.Body>
+                                </Card>
+                                <br />
+                                <Card>
+                                    <Card.Header style={{backgroundColor:'#355E3B', color: 'palegoldenrod'}} as="h5">ARO</Card.Header>
+                                    <Card.Body>
+                                        <Card.Title> Cross-Culturally Shared Sensitivity to Harmonic Structure Underlies Aspects of Pitch Discrimination</Card.Title>
+                                        <Card.Text>
+                                            Presenting Author
+                                        </Card.Text>
+                                        <Button href='https://pmg.joynadmin.org/documents/1050/67be84f67cd0475b3916b6f2.pdf#page=443' target="_blank" variant="custom_card">Abstract</Button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        </Row>                        
                     </table>
                     <br />
                 </Col>
