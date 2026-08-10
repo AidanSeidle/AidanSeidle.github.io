@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
 
 function CafBar() {
   const [text, setText] = useState('');
@@ -15,7 +15,7 @@ function CafBar() {
         const sheetValue = Math.round(data.sheetValue);
         displayTextRef.current = isNaN(sheetValue)
           ? 'Not currently caffeinated'
-          : `Currently ${sheetValue}mg caffeinated`;
+          : `${sheetValue}mg caffeinated`;
 
         setText('');
         indexRef.current = 0;
@@ -42,9 +42,6 @@ function CafBar() {
   }, []);
 
   return (
-    <Container fluid style={{
-      fontSize: '1.4em'
-      }}>
         <a
           id="cafLink"
           href="https://docs.google.com/spreadsheets/d/1vcsjGSYogF5qhITc6uiURuAzZngN3RxZZJ0jILF6t-E/edit?usp=sharing"
@@ -53,7 +50,6 @@ function CafBar() {
         >
           {text}
         </a>
-    </Container>
   );
 }
 

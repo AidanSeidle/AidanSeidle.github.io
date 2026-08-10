@@ -7,15 +7,15 @@ function Code() {
       <Row style={{
           textAlign:"Left"
         }}>
-        <h2 style={{fontSize:'1.4em'}}>Projects</h2>
+        <h2>Projects</h2>
           <Col xs={5}>
             <Nav.Link
                 as={Link}
-                to={'/CodingProject_CaffeineCoachlla'}
-                key={'/CodingProject_CaffeineCoachlla'}
+                to={'/CodingProject_CaffeineCoachella'}
+                key={'/CodingProject_CaffeineCoachella'}
                 className={`pixel-internal-link`}
               >
-              {'/CodingProject_CaffeineCoachlla' === '/CodingProject_CaffeineCoachlla' ? 'Caffeine Over Coachella' : '/CodingProject_CaffeineCoachlla'.replace('/', '').charAt(0).toUpperCase() + '/CodingProject_CaffeineCoachlla'.slice(2)}
+              {'/CodingProject_CaffeineCoachella' === '/CodingProject_CaffeineCoachella' ? 'Caffeine Over Coachella' : '/CodingProject_CaffeineCoachella'.replace('/', '').charAt(0).toUpperCase() + '/CodingProject_CaffeineCoachella'.slice(2)}
             </Nav.Link>
           </Col>
           <p>You can also check out my <a href='https://github.com/AidanSeidle'>GitHub</a>.</p>

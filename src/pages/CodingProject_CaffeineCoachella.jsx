@@ -6,7 +6,7 @@ function Home() {
     <div>
         <Col>
             <Row>
-                <h2 style={{fontSize:'1.4em'}}>Caffeination Over Coachella</h2>
+                <h2>Caffeination Over Coachella</h2>
                 <p>
                     &emsp;I have been honing my exact caffeine preferences for over a year now. 
                     As logged in the header of this website, I have tracked every caffeinated product I have consumed since 11/6/2024. 
@@ -28,7 +28,7 @@ function Home() {
                 </p>
                 <Row className="justify-content-md-center">
                     <Col md='auto'>
-                        <img src='../assets/media/half_life_equation.png'></img>
+                        <img src='../assets/media/half_life_equation.png' style={{backgroundColor:'#919797', borderRadius:'5px', padding:'2px'}}></img>
                     </Col>
                 </Row>
                 <p></p>

@@ -9,81 +9,91 @@ function Layout({ children }) {
   const location = useLocation();
 
   return (
-    <div style={{
-        backgroundColor: '#1B1B1B',
-      }}>
-      {/* Row containing visuals and CafBar */}
-      <Row>
-        <Row style={{backgroundColor:'#1B1B1B', minHeight:'80%'}}>
-          {/* Col containing name plate */}
-          <Col sm={6} style={{
-              display:'grid',
-              textAlign:'center',      
-              alignItems:'center'
+    <div>
+      {/* Col containing entire page */}
+      <Col>
+        {/* Row containing entire header */}
+        <Row style={{
+          maxWidth: '100vw',
+          maxHeight: '4%',
+          padding:'0 0 0 5%'
+        }}>
+          {/* Col containing name plate and NavBar links */}
+          <Col lg="10">
+            {/* Row containing name plate */}
+            <Row style={{
+                  display:'grid',
+                  textAlign:'left',      
+                  alignItems:'center',
             }}>
-            <Navbar.Brand as={Link} to="/">
-              <h1 style={{
-                  color: 'white',
-                  textShadow: '0px 2px 10px palegoldenrod',
+              <Navbar.Brand as={Link} to="/">
+                <h1 style={{
+                    fontSize: '3rem',
+                    color: 'white',
+                    textShadow: '0px 2px 10px palegoldenrod',
+                    padding:'5% 0 0 0'
+                  }}>
+                    Aidan Seidle
+                </h1>
+              </Navbar.Brand>
+            </Row>
+
+            {/* Row containing NavBar links and CafBar */}
+            <Row style={{backgroundColor:'#111717'}}>
+              {/* Col containg NavBar links */}
+              <Col>
+                <Navbar>
+                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                  <Navbar.Collapse id="navbarScroll">
+                    <Nav defaultActiveKey="/">
+                      {['/', '/code', '/music'].map((path) => (
+                        <Nav.Link
+                          as={Link}
+                          to={path}
+                          key={path}
+                          className={`pixel-nav-link${location.pathname === path ? ' active' : ''}`}
+                        >
+                          {path === '/' ? 'Home' : path.replace('/', '').charAt(0).toUpperCase() + path.slice(2)}
+                        </Nav.Link>
+                      ))}
+                    </Nav>
+                  </Navbar.Collapse>
+                </Navbar>
+              </Col>
+
+              {/* Col containing CafBar */}
+              <Col
+                style={{
+                  alignContent:'center',
+                  textAlign:'right',      
                 }}>
-                  Aidan <br></br>Seidle
-              </h1>
-            </Navbar.Brand>
+                <CafBar />
+              </Col>
+            </Row>
           </Col>
+
           {/* Col containing header image */}
-          <Col sm={'auto'}>
+          <Col lg="2" style={{
+                  alignContent:'flex-end',
+          }}>
             <img src={'../assets/media/NoBkgEEG.png'} 
               style={{
-                width:'auto',
-                minWidth:'100px',
-                maxWidth: '200px',
+                maxWidth:'10vw'
               }}>
             </img>
           </Col>
-          {/* Col containing CafBar */}
-          <Col sm={true}
-            style={{
-              display:'grid',
-              alignContent:'flex-end'
-            }}>
-            <CafBar />
-          </Col>
         </Row>
-        {/* Row containing NavBar links */}
-        <Row style={{backgroundColor:'#355E3B'}}>
-          <Col>
-            <Navbar>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="navbarScroll" className="w-100">
-                <Nav style={{padding:'0 0 0 3%'}} className="flex-row w-100" defaultActiveKey="/">
-                  {['/', '/code', '/music'].map((path) => (
-                    <Nav.Link
-                      as={Link}
-                      to={path}
-                      key={path}
-                      className={`pixel-nav-link${location.pathname === path ? ' active' : ''}`}
-                    >
-                      {path === '/' ? 'Home' : path.replace('/', '').charAt(0).toUpperCase() + path.slice(2)}
-                    </Nav.Link>
-                  ))}
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
-          </Col>
-        </Row>
-      </Row>
 
-      {/* Row containing body content */}
-      <Row style={{
-          padding: '0',
-          margin: '0',
-          width: '100%',
-          minHeight: '70vh',
-          backgroundColor:'#EFE7DA',
-          padding: '1.5% 3% 1.5% 3%',
-        }}>
-        {children}
-      </Row>
+        {/* Row containing body content */}
+        <Row style={{
+            maxWidth: '100vw',
+            backgroundColor:'#050505',
+            padding: '1.5% 3% 1.5% 3%',
+          }}>
+          {children}
+        </Row>
+
+      </Col>
     </div>
   );
 }

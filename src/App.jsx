@@ -38,15 +38,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout><Home /></Layout>} />
           <Route path="/code" element={<Layout><Code /></Layout>} />
-          <Route path="/CodingProject_CaffeineCoachlla" element={<Layout><CodingProject_CaffeineCoachella /></Layout>} />
-
-
+          <Route path="/CodingProject_CaffeineCoachella" element={<Layout><CodingProject_CaffeineCoachella /></Layout>} />
 
 
           <Route path="/music" element={<Layout><Music /></Layout>} />
 
           <Route path="*" element={<h2>Page Not Found</h2>} />
-
 
           <Route path="/char-pixel" element={<Layout><CharPixelPage /></Layout>} />
 
