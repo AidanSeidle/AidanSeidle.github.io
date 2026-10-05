@@ -35,7 +35,7 @@ function Home() {
                 <p>
                     &emsp;In addition to caffeine, I superimposed my heart rate over the duration of festival onto the dose graphs. The heart rate data was much less consistent due to the collection 
                     device that often spun on my finger or would have lapses in collection based on interal functions designed to increase resolution once a 'workout' event is detected. 
-                    Additionaly, the ring's method is not continual monitroing, but rather routine check ins 4 minutes apart. So, if you dance for a 3 minute song and then don't 
+                    Additionaly, the ring's method is not continual monitoring, but rather routine check ins 4 minutes apart. So, if you dance for a 3 minute song and then don't 
                     dance for the next, the check in could miss a song and not accurately represent short bursts of increased heart rate. For this reason, I was relatively certain that moment 
                     to moment heart rate tracking was already too low resolution for any changes within a performance. So, for greater legibility, I smoothed the heart rate data with a 
                     rolling mean with a kernel size of 30 minutes without much concern over data loss.
