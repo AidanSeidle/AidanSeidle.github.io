@@ -11,6 +11,14 @@ function Code() {
           <Col xs={5}>
             <Nav.Link
                 as={Link}
+                to={'/CodingProject_SlayingTheGeneral'}
+                key={'/CodingProject_SlayingTheGeneral'}
+                className={`pixel-internal-link`}
+              >
+              {'/CodingProject_SlayingTheGeneral' === '/CodingProject_SlayingTheGeneral' ? 'Slaying The General' : '/CodingProject_SlayingTheGeneral'.replace('/', '').charAt(0).toUpperCase() + '/CodingProject_SlayingTheGeneral'.slice(2)}
+            </Nav.Link>
+            <Nav.Link
+                as={Link}
                 to={'/CodingProject_CaffeineCoachella'}
                 key={'/CodingProject_CaffeineCoachella'}
                 className={`pixel-internal-link`}

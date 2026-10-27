@@ -166,3 +166,13 @@ footer {
   max-width: 10%; 
   max-height: 10%;
 }
+
+/* ==========================================================================
+      MAP PAGE
+   ========================================================================== */
+.leaflet-popup-content h3,
+.leaflet-container h3 {
+  font-family: 'Pixel NES', sans-serif !important;
+  /* Optional: preserve styling */
+  color: #111717;
+}

@@ -13,7 +13,7 @@ import Home from "./pages/Home";
 import Mobile from "./pages/Mobile";
 import Code from "./pages/Code";
 import CodingProject_CaffeineCoachella from "./pages/CodingProject_CaffeineCoachella";
-
+import CodingProject_SlayingTheGeneral from "./pages/CodingProject_SlayingTheGeneral";
 
 
 import Music from "./pages/Music";
@@ -39,6 +39,7 @@ function App() {
           <Route path="/" element={<Layout><Home /></Layout>} />
           <Route path="/code" element={<Layout><Code /></Layout>} />
           <Route path="/CodingProject_CaffeineCoachella" element={<Layout><CodingProject_CaffeineCoachella /></Layout>} />
+          <Route path="/CodingProject_SlayingTheGeneral" element={<Layout><CodingProject_SlayingTheGeneral /></Layout>} />
 
 
           <Route path="/music" element={<Layout><Music /></Layout>} />

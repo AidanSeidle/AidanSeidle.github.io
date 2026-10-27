@@ -25,6 +25,8 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies and build
+        env:
+          VITE_CARTO_API_KEY: ${{ secrets.CARTO_API_KEY }}
         run: |
           npm ci
           npm run build  # Vite builds to dist/
